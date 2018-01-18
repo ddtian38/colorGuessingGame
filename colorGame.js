@@ -21,16 +21,6 @@ for (var i = 0; i < squares.length; i++){
 	goal[2].textContent = answer.green;
 };
 
-// //Easy mode
-// modes.addEventListener("click", function(){
-// 	var parent = document.getElementById("container");
-// 	var child = squares;
-// 	for (var i = squares.length-1; i >=(squares.length)/2; i--){
-// 		parent.removeChild(child[i]);
-// 	}
-// 	squares = document.querySelectorAll(".square");
-// 	reset();
-// });
 
 for (var i = 0; i < modes.length; i++){
 	modes[i].addEventListener("click", function(){
@@ -42,8 +32,7 @@ for (var i = 0; i < modes.length; i++){
 	}
 	else{
 		var numSquares = squares.length;
-	}
-	
+	}	
 })
 };
 
